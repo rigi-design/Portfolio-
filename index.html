@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rigi Bossekota Iyema Efole</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Nav -->
+    <header class="header">
+        <nav class="nav" id="nav">
+            <div class="nav__logo">
+                <h2>Rigi BE</h2>
+            </div>
+            <ul class="nav__links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav__mobile" id="mobile-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero__container">
+            <h1 class="hero__title">Rigi Bossekota Iyema Efole</h1>
+            <p class="hero__subtitle">Développeur Web, Mobile & Desktop</p>
+            <div class="hero__btns">
+                <a href="#projects" class="btn btn--primary">Mes Projets</a>
+                <a href="#contact" class="btn btn--secondary">Me Contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section__title">À propos</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>Passionné par le développement logiciel, je crée des applications web modernes, des apps mobiles fluides et des logiciels desktop performants.</p>
+                    <p>Compétences principales :</p>
+                </div>
+                <div class="skills">
+                    <div class="skill">
+                        <h3>Web</h3>
+                        <span>HTML, CSS, JavaScript, PHP</span>
+                    </div>
+                    <div class="skill">
+                        <h3>Mobile</h3>
+                        <span>Flutter</span>
+                    </div>
+                    <div class="skill">
+                        <h3>Desktop</h3>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section__title">Projets</h2>
+            <div class="projects__grid">
+                <div class="project__card">
+                    <h3>Portfolio Web</h3>
+                    <p>Site vitrine responsive avec HTML/CSS/JS.</p>
+                    <a href="#" class="btn btn--small">Voir</a>
+                </div>
+                <div class="project__card">
+                    <h3>App Mobile Flutter</h3>
+                    <p>Application cross-platform en Flutter.</p>
+                    <a href="#" class="btn btn--small">Voir</a>
+                </div>
+                <div class="project__card">
+                    <h3>Desktop Python</h3>
+                    <p>Outil desktop développé en Python.</p>
+                    <a href="#" class="btn btn--small">Voir</a>
+                </div>
+                <!-- Ajoutez vos vrais projets ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section__title">Contact</h2>
+            <form class="contact__form" id="contact-form">
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message" rows="5" required></textarea>
+                <button type="submit" class="btn btn--primary">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Rigi Bossekota Iyema Efole. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
