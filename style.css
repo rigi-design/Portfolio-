@@ -1,3 +1,30 @@
+:root {
+  --primary-gradient: linear-gradient(45deg, #00d4ff, #0099cc);
+  --secondary-gradient: linear-gradient(45deg, #ff6b9d, #ff8e8e);
+  --bg-dark: #0f0f14;
+  --bg-light: #f8f9fa;
+  --text-dark: #333;
+  --text-light: #fff;
+  --glass-dark: rgba(255,255,255,0.05);
+  --glass-light: rgba(0,0,0,0.05);
+  --shadow: 0 20px 60px rgba(0,0,0,0.3);
+  --border-radius: 20px;
+}
+
+[data-theme="dark"] {
+  --bg-hero: linear-gradient(135deg, var(--bg-dark) 0%, #1a1a2e 50%, #16213e 100%);
+  --glass: var(--glass-dark);
+  --text: var(--text-light);
+  --text-secondary: #ccc;
+}
+
+[data-theme="light"] {
+  --bg-hero: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%);
+  --glass: var(--glass-light);
+  --text: var(--text-dark);
+  --text-secondary: #666;
+}
+
 /* Reset & Base */
 * {
     margin: 0;
@@ -217,10 +244,85 @@ section {
     color: white;
 }
 
+.projects-preview {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 100px 0;
+}
+
 .projects__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 2rem;
+}
+
+.project__card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255,255,255,0.2);
+    height: 100%;
+}
+
+.project__card:hover {
+    transform: translateY(-20px) scale(1.02);
+    box-shadow: var(--shadow);
+}
+
+.project__img {
+    height: 250px;
+    overflow: hidden;
+}
+
+.project__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.project__card:hover .project__img img {
+    transform: scale(1.1);
+}
+
+.project__content {
+    padding: 2rem;
+}
+
+.project__content h3 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.project__content p {
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.tech-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.tech {
+    background: rgba(255,255,255,0.2);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.project__btns {
+    display: flex;
+    gap: 1rem;
 }
 
 .project__card {
