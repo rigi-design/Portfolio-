@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Rigi Bossekota Iyema Efole</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <h2>Rigi BE</h2>
+            </div>
+            <ul class="nav__links">
+                <li><a href="../index.html#home">Accueil</a></li>
+                <li><a href="../index.html#about">À propos</a></li>
+                <li><a href="#">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Projets List -->
+    <main class="projects-page">
+        <div class="container">
+            <h1 class="section__title">Mes Projets</h1>
+            <div class="projects__grid">
+                <div class="project__card" data-aos="fade-up">
+                    <i class="fas fa-globe project__icon"></i>
+                    <h3>Portfolio Web</h3>
+                    <p>Site vitrine responsive moderne avec HTML5, CSS3 Grid/Flexbox, JavaScript vanilla et animations AOS.</p>
+                    <div class="project__tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+                    <a href="https://rigi-design.github.io/Portfolio-" class="btn btn--primary">Live Demo</a>
+                    <a href="https://github.com/rigi-design/Portfolio-" class="btn btn--secondary">Code</a>
+                </div>
+
+                <div class="project__card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fab fa-flutter project__icon"></i>
+                    <h3>App Mobile Flutter</h3>
+                    <p>Application mobile cross-platform (Android/iOS) développée avec Flutter et Dart.</p>
+                    <div class="project__tech">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                    </div>
+                    <a href="#" class="btn btn--primary">Live Demo</a>
+                    <a href="#" class="btn btn--secondary">Code</a>
+                </div>
+
+                <div class="project__card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fab fa-python project__icon"></i>
+                    <h3>Application Desktop Python</h3>
+                    <p>Outil desktop avec interface graphique (Tkinter/PyQt), backend Python.</p>
+                    <div class="project__tech">
+                        <span>Python</span>
+                        <span>Tkinter</span>
+                    </div>
+                    <a href="#" class="btn btn--primary">Live Demo</a>
+                    <a href="#" class="btn btn--secondary">Code</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

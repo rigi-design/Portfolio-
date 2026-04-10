@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Rigi Bossekota Iyema Efole</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <h2>Rigi BE</h2>
+            </div>
+            <ul class="nav__links">
+                <li><a href="../index.html#home">Accueil</a></li>
+                <li><a href="../index.html#about">À propos</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Main -->
+    <main class="contact-page">
+        <div class="container">
+            <h1 class="section__title">Contactez-moi</h1>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h2>Discutons de votre projet !</h2>
+                    <p>Envoyez-moi un message ou connectez sur les réseaux.</p>
+                    <div class="contact__social">
+                        <a href="https://github.com/rigi-design" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:contact@rigidesign.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://wa.me/..." class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact__form" id="contact-form">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <input type="text" placeholder="Sujet" required>
+                    <textarea placeholder="Votre message..." rows="6" required></textarea>
+                    <button type="submit" class="btn btn--primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Message envoyé ! (Demo - contactez via social)');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
