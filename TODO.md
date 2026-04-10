@@ -17,7 +17,7 @@
 - [x] git init
 - [ ] git init
 - [ ] Créer repo GitHub 'mon-portfolio'
-- [ ] git add . && git commit -m "Initial portfolio"
+- [x] git add . && git commit -m "Initial portfolio"
 - [ ] git remote add origin https://github.com/VOTRE_USERNAME/mon-portfolio.git
 - [ ] git push -u origin main
 

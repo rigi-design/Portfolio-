@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Rigi Bossekota Iyema Efole</title>
+<title>Portfolio - Rigi Bossekota Iyema Efole</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -49,20 +53,41 @@
                     <p>Passionné par le développement logiciel, je crée des applications web modernes, des apps mobiles fluides et des logiciels desktop performants.</p>
                     <p>Compétences principales :</p>
                 </div>
-                <div class="skills">
-                    <div class="skill">
-                        <h3>Web</h3>
-                        <span>HTML, CSS, JavaScript, PHP</span>
-                    </div>
-                    <div class="skill">
-                        <h3>Mobile</h3>
-                        <span>Flutter</span>
-                    </div>
-                    <div class="skill">
-                        <h3>Desktop</h3>
-                        <span>Python</span>
-                    </div>
-                </div>
+<div class="skills">
+    <div class="skill" data-aos="fade-up">
+        <i class="fas fa-code skill__icon"></i>
+        <h3>Web Development</h3>
+        <div class="progress__container">
+            <span class="progress__label">90%</span>
+            <div class="progress__bar">
+                <div class="progress__fill" data-progress="90"></div>
+            </div>
+        </div>
+        <small>HTML, CSS, JS, PHP</small>
+    </div>
+    <div class="skill" data-aos="fade-up" data-aos-delay="100">
+        <i class="fab fa-flutter skill__icon"></i>
+        <h3>Mobile</h3>
+        <div class="progress__container">
+            <span class="progress__label">85%</span>
+            <div class="progress__bar">
+                <div class="progress__fill" data-progress="85"></div>
+            </div>
+        </div>
+        <small>Flutter</small>
+    </div>
+    <div class="skill" data-aos="fade-up" data-aos-delay="200">
+        <i class="fab fa-python skill__icon"></i>
+        <h3>Desktop</h3>
+        <div class="progress__container">
+            <span class="progress__label">80%</span>
+            <div class="progress__bar">
+                <div class="progress__fill" data-progress="80"></div>
+            </div>
+        </div>
+        <small>Python</small>
+    </div>
+</div>
             </div>
         </div>
     </section>
@@ -107,9 +132,19 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Rigi Bossekota Iyema Efole. Tous droits réservés.</p>
+<div class="footer__social">
+        <a href="https://github.com/rigi-design" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/YOUR_LINK" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:your@email.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2024 Rigi Bossekota Iyema Efole. Tous droits réservés. | <a href="https://github.com/rigi-design/Portfolio-" target="_blank">Source</a></p>
     </footer>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({
+        duration: 1200,
+        once: true
+    });</script>
     <script src="js/script.js"></script>
 </body>
 </html>

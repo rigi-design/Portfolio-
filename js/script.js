@@ -71,3 +71,20 @@ document.querySelectorAll('section').forEach(section => {
     section.style.transition = 'all 0.6s ease';
     observer.observe(section);
 });
+
+// Progress bars animation
+const progressBarsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const fills = entry.target.querySelectorAll('.progress__fill');
+            fills.forEach(fill => {
+                const width = fill.dataset.progress;
+                fill.style.width = width;
+            });
+        }
+    });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.skill').forEach(skill => {
+    progressBarsObserver.observe(skill);
+});
