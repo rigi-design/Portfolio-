@@ -1,4 +1,4 @@
-et:root {
+:root {
   --primary-gradient: linear-gradient(45deg, #00d4ff, #0099cc);
   --secondary-gradient: linear-gradient(45deg, #ff6b9d, #ff8e8e);
   --bg-dark: #0f0f14;
@@ -236,7 +236,7 @@ section {
     align-items: center;
 }
 
-.skills {
+.skills__grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -246,10 +246,6 @@ section {
     .skills__grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
-}
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
 }
 
 .skill {
