@@ -111,6 +111,21 @@ body {
     flex-wrap: wrap;
 }
 
+.hero__photo {
+    display: flex;
+    justify-content: center;
+}
+
+.hero__photo img {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    border: 5px solid rgba(0,212,255,0.2);
+}
+
 .btn {
     padding: 12px 30px;
     border-radius: 50px;
