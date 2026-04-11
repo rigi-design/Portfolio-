@@ -103,13 +103,17 @@ body {
 
 /* Hero */
 .hero {
-    height: 100vh;
+    min-height: 60vh;
     background: linear-gradient(135deg, #0f0f14 0%, #1a1a2e 50%, #16213e 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+}
+
+.hero--compact {
+    min-height: 40vh;
 }
 
 .hero__container {
