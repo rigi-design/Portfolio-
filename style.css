@@ -201,12 +201,6 @@ body {
     gap: 1rem;
     margin: 4rem auto;
     flex-wrap: wrap;
-    width: fit-content;
-    padding: 1rem;
-    background: rgba(255,255,255,0.1);
-    border-radius: 50px;
-    border: 1px solid rgba(255,255,255,0.2);
-    backdrop-filter: blur(10px);
 }
 
 .filter-btn {
@@ -224,6 +218,7 @@ body {
 .filter-btn.active {
     background: linear-gradient(45deg, #00d4ff, #0099cc);
     border-color: #00d4ff;
+    box-shadow: 0 0 20px rgba(0,212,255,0.5);
 }
 
 .projects-page .project__card {
