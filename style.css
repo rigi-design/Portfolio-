@@ -199,8 +199,14 @@ body {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 4rem;
+    margin: 4rem auto;
     flex-wrap: wrap;
+    width: fit-content;
+    padding: 1rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
 }
 
 .filter-btn {
