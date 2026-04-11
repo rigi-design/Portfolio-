@@ -30,12 +30,22 @@
         </div>
     </section>
 
+    <!-- Filter Buttons -->
+    <div class="projects-filter">
+        <div class="container">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="desktop">Desktop</button>
+        </div>
+    </div>
+
     <!-- Projects Preview Grid like index -->
     <section class="projects-preview-section">
         <div class="container">
             <div class="projects__grid">
                 <!-- Card 1 - Web -->
-                <div class="project__card" data-aos="fade-up">
+<div class="project__card web" data-aos="fade-up" data-category="web">
                     <div class="project__img">
                         <img src="../assets/images/moi.jpeg" alt="Portfolio Web" />
                     </div>
@@ -56,7 +66,7 @@
                 </div>
 
                 <!-- Card 2 - Flutter -->
-                <div class="project__card" data-aos="fade-up" data-aos-delay="100">
+<div class="project__card mobile" data-aos="fade-up" data-aos-delay="100" data-category="mobile">
                     <div class="project__img">
                         <img src="../assets/images/moi.jpeg" alt="App Flutter" />
                     </div>
@@ -77,7 +87,7 @@
                 </div>
 
                 <!-- Card 3 - Python -->
-                <div class="project__card" data-aos="fade-up" data-aos-delay="200">
+<div class="project__card desktop" data-aos="fade-up" data-aos-delay="200" data-category="desktop">
                     <div class="project__img">
                         <img src="../assets/images/moi.jpeg" alt="Desktop Python" />
                     </div>
@@ -112,6 +122,18 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({duration: 1000});
+
+        // Filter
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.onclick = () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const f = btn.dataset.filter;
+                document.querySelectorAll('.project__card').forEach(c => {
+                    c.style.display = f === 'all' || c.classList.contains(f) ? '' : 'none';
+                });
+            }
+        });
     </script>
 </body>
 </html>
