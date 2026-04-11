@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - Rigi Bossekota Iyema Efole</title>
+    <title>Projets - Rigi Bossekota Iyema Efole | Développeur Fullstack</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- Navbar Full -->
     <header class="header">
         <nav class="nav" id="nav">
             <div class="nav__logo">
-                <h2>Rigi BE</h2>
+                <h2><i class="fas fa-code"></i> Rigi BE</h2>
             </div>
             <ul class="nav__links">
-                <li><a href="../index.html#home">Accueil</a></li>
+                <li><a href="../index.html">Accueil</a></li>
                 <li><a href="../index.html#about">À propos</a></li>
-                <li><a href="#projects" class="nav-active">Projets</a></li>
+                <li><a href="#projects" class="active">Projets</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav__mobile" id="mobile-btn">
@@ -29,148 +29,185 @@
         </nav>
     </header>
 
-    <!-- Hero Projects -->
+    <!-- Hero Section Projets -->
     <section class="projects-hero">
         <div class="container">
-            <h1 class="hero__title projects-hero__title">Mes Projets</h1>
-            <p class="hero__subtitle">Mes réalisations techniques et créatives</p>
-        </div>
-    </section>
-
-    <!-- Projects Grid -->
-    <section class="projects-section">
-        <div class="container">
-            <div class="projects__filter">
-                <button class="filter-btn active" data-filter="all">Tous</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-                <button class="filter-btn" data-filter="desktop">Desktop</button>
-            </div>
-            
-            <div class="projects__grid">
-                <!-- Portfolio -->
-                <div class="project__card" data-category="web" data-aos="fade-up">
-                    <div class="project__img">
-                        <img src="../assets/images/moi.jpeg" alt="Portfolio Web" />
-                    </div>
-                    <div class="project__content">
-                        <div class="project__header">
-                            <h3>Portfolio Personnel</h3>
-                            <span class="project__type">Site Vitrine</span>
-                        </div>
-                        <p>Portfolio moderne avec glassmorphism, animations AOS, design responsive et architecture multi-page.</p>
-                        <div class="project__tech">
-                            <span class="tech">HTML5</span>
-                            <span class="tech">CSS3</span>
-                            <span class="tech">JavaScript</span>
-                            <span class="tech">AOS</span>
-                        </div>
-                        <div class="project__btns">
-                            <a href="https://rigi-design.github.io/Portfolio-/" class="btn btn--primary" target="_blank">Live Demo</a>
-                            <a href="https://github.com/rigi-design/Portfolio-" class="btn btn--secondary" target="_blank">Voir Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Flutter App -->
-                <div class="project__card" data-category="mobile" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project__img">
-                        <img src="../assets/images/moi.jpeg" alt="App Flutter" />
-                    </div>
-                    <div class="project__content">
-                        <div class="project__header">
-                            <h3>App Mobile Flutter</h3>
-                            <span class="project__type">Cross-platform</span>
-                        </div>
-                        <p>Application mobile Android/iOS avec Material Design 3, state management et Firebase backend.</p>
-                        <div class="project__tech">
-                            <span class="tech">Flutter</span>
-                            <span class="tech">Dart</span>
-                            <span class="tech">Firebase</span>
-                            <span class="tech">Riverpod</span>
-                        </div>
-                        <div class="project__btns">
-                            <a href="#" class="btn btn--primary">APK Demo</a>
-                            <a href="#" class="btn btn--secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Python Desktop -->
-                <div class="project__card" data-category="desktop" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project__img">
-                        <img src="../assets/images/moi.jpeg" alt="Desktop Python" />
-                    </div>
-                    <div class="project__content">
-                        <div class="project__header">
-                            <h3>Outil Desktop Python</h3>
-                            <span class="project__type">Application</span>
-                        </div>
-                        <p>Application desktop avec GUI moderne, base de données SQLite et export PDF/Excel.</p>
-                        <div class="project__tech">
-                            <span class="tech">Python</span>
-                            <span class="tech">Tkinter</span>
-                            <span class="tech">SQLite</span>
-                            <span class="tech">Pandas</span>
-                        </div>
-                        <div class="project__btns">
-                            <a href="#" class="btn btn--primary">Download</a>
-                            <a href="#" class="btn btn--secondary">GitHub</a>
-                        </div>
-                    </div>
+            <div class="hero-content">
+                <h1 class="hero__title">Mes <span class="gradient-text">Projets</span></h1>
+                <p class="hero__subtitle">Portfolio de réalisations web, mobile et desktop avec technologies modernes</p>
+                <div class="hero-stats">
+                    <span>3 <small>Projets live</small></span>
+                    <span>5+ <small>Techs</small></span>
+                    <span>100% <small>Responsive</small></span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="projects-stats">
+    <!-- Filter & Grid -->
+    <section class="projects-main">
         <div class="container">
-            <div class="stats__grid">
-                <div class="stat">
-                    <h3>3+</h3>
-                    <p>Projets live</p>
-                </div>
-                <div class="stat">
-                    <h3>5+</h3>
-                    <p>Technologies</p>
-                </div>
-                <div class="stat">
-                    <h3>100%</h3>
-                    <p>Responsive</p>
-                </div>
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> Tous
+                </button>
+                <button class="filter-btn" data-filter="web">
+                    <i class="fas fa-globe"></i> Web
+                </button>
+                <button class="filter-btn" data-filter="mobile">
+                    <i class="fab fa-mobile-alt"></i> Mobile
+                </button>
+                <button class="filter-btn" data-filter="desktop">
+                    <i class="fas fa-desktop"></i> Desktop
+                </button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Projet 1: Portfolio -->
+                <article class="project-card web" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="project-media">
+                        <img src="../assets/images/moi.jpeg" alt="Portfolio Web" loading="lazy">
+                        <div class="project-links">
+                            <a href="https://rigi-design.github.io/Portfolio-/" class="link-demo" target="_blank" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/rigi-design/Portfolio-" class="link-code" target="_blank" title="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <h3>Portfolio Personnel Pro</h3>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <p>Site vitrine ultra-moderne glassmorphism avec animations AOS, multi-page responsive, filter système et design système complet.</p>
+                        <ul class="project-tags">
+                            <li><i class="fab fa-html5"></i> HTML5</li>
+                            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                            <li><i class="fab fa-js-square"></i> Vanilla JS</li>
+                            <li><i class="fas fa-magic"></i> AOS</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Projet 2: Flutter -->
+                <article class="project-card mobile" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-media">
+                        <img src="../assets/images/moi.jpeg" alt="App Flutter" loading="lazy">
+                        <div class="project-links">
+                            <a href="#" class="link-demo" title="APK Demo">
+                                <i class="fas fa-download"></i>
+                            </a>
+                            <a href="#" class="link-code" title="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <h3>Mobile App Flutter</h3>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <p>Application cross-platform Android/iOS avec Material Design 3, Riverpod state management, Firebase Auth/Database, animations fluides.</p>
+                        <ul class="project-tags">
+                            <li><i class="fab fa-flutter"></i> Flutter</li>
+                            <li><i class="fab fa-dart"></i> Dart</li>
+                            <li><i class="fas fa-database"></i> Firebase</li>
+                            <li><i class="fas fa-seedling"></i> Riverpod</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Projet 3: Python Desktop -->
+                <article class="project-card desktop" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-media">
+                        <img src="../assets/images/moi.jpeg" alt="Desktop Python" loading="lazy">
+                        <div class="project-links">
+                            <a href="#" class="link-demo" title="Download">
+                                <i class="fas fa-download"></i>
+                            </a>
+                            <a href="#" class="link-code" title="Source Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <h3>Desktop Tool Python</h3>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <p>Application desktop professionnelle avec GUI moderne Tkinter, SQLite ORM, export PDF/Excel, threading et packaging PyInstaller.</p>
+                        <ul class="project-tags">
+                            <li><i class="fab fa-python"></i> Python</li>
+                            <li><i class="fab fa-css3-alt"></i> Tkinter</li>
+                            <li><i class="fas fa-database"></i> SQLite</li>
+                            <li><i class="fas fa-file-export"></i> Pandas</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more">
+                <button class="btn btn--primary btn--large">
+                    <i class="fas fa-plus"></i> Charger Plus
+                </button>
             </div>
         </div>
     </section>
 
     <script src="../js/script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1000,
+            easing: 'ease-in-out',
             once: true
         });
 
-        // Filter projects
+        // Filter Projects
         const filterBtns = document.querySelectorAll('.filter-btn');
-        const projectCards = document.querySelectorAll('.project__card');
+        const projectCards = document.querySelectorAll('.project-card');
+        const loadMoreBtn = document.querySelector('.load-more button');
 
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+                
                 filterBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
 
-                const filter = btn.dataset.filter;
-
-                projectCards.forEach(card => {
-                    if (filter === 'all' || card.dataset.category === filter) {
+                projectCards.forEach((card, index) => {
+                    if (filter === 'all' || card.classList.contains(filter)) {
                         card.style.display = 'block';
-                        card.classList.add('animate');
+                        card.classList.add('show');
+                        setTimeout(() => card.classList.add('animate'), 100);
                     } else {
                         card.style.display = 'none';
                     }
                 });
             });
+        });
+
+        // Load More (demo)
+        loadMoreBtn.addEventListener('click', () => {
+            loadMoreBtn.style.opacity = '0.7';
+            setTimeout(() => {
+                loadMoreBtn.innerHTML = '<i class="fas fa-check"></i> Projets chargés !';
+                loadMoreBtn.style.cursor = 'default';
+            }, 1000);
+        });
+
+        // Active nav on scroll
+        window.addEventListener('scroll', () => {
+            const navLinks = document.querySelectorAll('.nav__links a');
+            navLinks.forEach(link => {
+                if (link.classList.contains('active')) link.classList.remove('active');
+            });
+            document.querySelector('.nav__links li:nth-child(3) a').classList.add('active');
         });
     </script>
 </body>
