@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets | Rigi Bossekota Iyema Efole</title>
     <link rel="stylesheet" href="../style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header/Nav -->
     <header class="header">
-        <nav class="nav" id="nav">
+        <nav class="nav">
             <div class="nav__logo">Rigi BE</div>
             <ul class="nav__links">
                 <li><a href="../index.html">Accueil</a></li>
@@ -23,114 +21,124 @@
     </header>
 
     <!-- Hero -->
-    <section class="projects-hero">
+    <section class="hero hero--projects">
         <div class="container">
-            <h1 class="section__title">Mes Projets</h1>
-            <p>Présentation détaillée de mes réalisations professionnelles</p>
+            <h1>Mes Projets Professionnels</h1>
+            <p>Web, Mobile Flutter, Desktop Python - Portfolio complet</p>
         </div>
     </section>
 
-    <!-- Filter Buttons -->
-    <div class="projects__filter">
-        <button class="filter-btn active" data-filter="all">Tous</button>
-        <button class="filter-btn" data-filter="web">Web</button>
-        <button class="filter-btn" data-filter="mobile">Mobile</button>
-        <button class="filter-btn" data-filter="desktop">Desktop</button>
-    </div>
+    <!-- Filter Buttons - ALL VISIBLE -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="projects__filter">
+                <button class="filter-btn active" data-filter="all">📱 Tous</button>
+                <button class="filter-btn" data-filter="web">🌐 Web</button>
+                <button class="filter-btn" data-filter="mobile">📱 Mobile</button>
+                <button class="filter-btn" data-filter="desktop">💻 Desktop</button>
+            </div>
+        </div>
+    </section>
 
-    <!-- Projects Preview Grid like index -->
-    <section class="projects-preview-section">
+    <!-- Projects Grid -->
+    <section class="projects-section">
         <div class="container">
             <div class="projects__grid">
-                <!-- Card 1 - Web -->
-<div class="project__card web" data-aos="fade-up" data-category="web">
+                <!-- Web Project -->
+                <article class="project__card web" data-category="web">
                     <div class="project__img">
-                        <img src="../assets/images/moi.jpeg" alt="Portfolio Web" />
+                        <img src="../assets/images/moi.jpeg" alt="Portfolio Web" loading="lazy">
                     </div>
                     <div class="project__content">
-                        <h3>Portfolio Web Professionnel</h3>
-                        <p>Site vitrine moderne avec design glassmorphism, animations fluides et responsive design optimisé tous appareils.</p>
+                        <h3>Portfolio Web Pro</h3>
+                        <p>Site vitrine glassmorphism responsive, animations AOS, multi-pages GitHub Pages</p>
                         <div class="tech-tags">
-                            <span class="tech">HTML5</span>
-                            <span class="tech">CSS3</span>
-                            <span class="tech">JavaScript</span>
-                            <span class="tech">Responsive</span>
+                            <span>HTML5/CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive</span>
+                            <span>AOS Anim</span>
                         </div>
                         <div class="project__btns">
-                            <a href="https://rigi-design.github.io/Portfolio-/" class="btn btn--small" target="_blank">Live Demo</a>
-                            <a href="https://github.com/rigi-design/Portfolio-" class="btn btn--secondary btn--small" target="_blank">Code Source</a>
+                            <a href="https://rigi-design.github.io/Portfolio-/" class="btn btn--small" target="_blank">Live</a>
+                            <a href="https://github.com/rigi-design/Portfolio-" class="btn btn--secondary btn--small" target="_blank">GitHub</a>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- Card 2 - Flutter -->
-<div class="project__card mobile" data-aos="fade-up" data-aos-delay="100" data-category="mobile">
+                <!-- Mobile Flutter -->
+                <article class="project__card mobile" data-category="mobile">
                     <div class="project__img">
-                        <img src="../assets/images/moi.jpeg" alt="App Flutter" />
+                        <img src="../assets/images/moi.jpeg" alt="Flutter App" loading="lazy">
                     </div>
                     <div class="project__content">
-                        <h3>Application Mobile Flutter</h3>
-                        <p>App cross-platform Android/iOS avec Material Design 3, state management et intégration Firebase realtime.</p>
+                        <h3>App Flutter Cross-Platform</h3>
+                        <p>Android/iOS app Material 3, Firebase realtime, state management Riverpod</p>
                         <div class="tech-tags">
-                            <span class="tech">Flutter</span>
-                            <span class="tech">Dart</span>
-                            <span class="tech">Firebase</span>
-                            <span class="tech">Material 3</span>
+                            <span>Flutter/Dart</span>
+                            <span>Firebase</span>
+                            <span>Material 3</span>
+                            <span>Riverpod</span>
                         </div>
                         <div class="project__btns">
-                            <a href="#" class="btn btn--small">Demo APK</a>
-                            <a href="#" class="btn btn--secondary btn--small">Code Source</a>
+                            <a href="#" class="btn btn--small">APK Demo</a>
+                            <a href="#" class="btn btn--secondary btn--small">GitHub</a>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <!-- Card 3 - Python -->
-<div class="project__card desktop" data-aos="fade-up" data-aos-delay="200" data-category="desktop">
+                <!-- Desktop Python -->
+                <article class="project__card desktop" data-category="desktop">
                     <div class="project__img">
-                        <img src="../assets/images/moi.jpeg" alt="Desktop Python" />
+                        <img src="../assets/images/moi.jpeg" alt="Python Desktop" loading="lazy">
                     </div>
                     <div class="project__content">
                         <h3>Outil Desktop Python</h3>
-                        <p>Application desktop avec interface utilisateur moderne, base de données intégrée et exports Excel/PDF.</p>
+                        <p>App Windows/Mac GUI moderne, SQLite DB, Excel/PDF export, exécutable</p>
                         <div class="tech-tags">
-                            <span class="tech">Python</span>
-                            <span class="tech">Tkinter</span>
-                            <span class="tech">SQLite</span>
-                            <span class="tech">Pandas</span>
+                            <span>Python 3.12</span>
+                            <span>Tkinter</span>
+                            <span>SQLite</span>
+                            <span>Pandas</span>
                         </div>
                         <div class="project__btns">
-                            <a href="#" class="btn btn--small">Download</a>
-                            <a href="#" class="btn btn--secondary btn--small">Code Source</a>
+                            <a href="#" class="btn btn--small">EXE Download</a>
+                            <a href="#" class="btn btn--secondary btn--small">GitHub</a>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- CTA -->
-    <section class="projects-cta">
+    <section class="cta-section">
         <div class="container">
-            <h2 class="section__title">Votre Projet ?</h2>
-            <a href="contact.html" class="btn btn--primary btn--large">Discutons</a>
+            <h2>Prêt pour votre projet ?</h2>
+            <a href="contact.html" class="btn btn--primary btn--large">Contactez-moi</a>
         </div>
     </section>
 
     <script src="../js/script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({duration: 1000});
-
-        // Filter
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.onclick = () => {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                const f = btn.dataset.filter;
-                document.querySelectorAll('.project__card').forEach(c => {
-                    c.style.display = f === 'all' || c.classList.contains(f) ? '' : 'none';
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Filter projects
+                const filterValue = button.getAttribute('data-filter');
+                document.querySelectorAll('.project__card').forEach(project => {
+                    if (filterValue === 'all' || project.classList.contains(filterValue)) {
+                        project.style.display = 'block';
+                        project.style.opacity = '1';
+                        project.style.transform = 'translateY(0)';
+                    } else {
+                        project.style.display = 'none';
+                    }
                 });
-            }
+            });
         });
     </script>
 </body>
