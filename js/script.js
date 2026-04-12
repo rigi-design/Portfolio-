@@ -93,12 +93,11 @@ window.confirmAndSend = function(encodedData) {
             message: message
         }).then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
-            form.reset();
-            alert('✅ Message envoyé ! Réponse sous 24h.');
+form.reset();
+            showSuccessPopup();
         }, function(error) {
             console.log('FAILED...', error);
-            form.reset();
-            alert('✅ Prévisualisé OK ! EmailJS live sur GitHub Pages.');
+
         });
     } else {
         // Local demo
