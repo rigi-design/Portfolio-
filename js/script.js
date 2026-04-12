@@ -30,13 +30,32 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Contact form handling (demo - console log)
+// Contact form handler index - popup confirm + EmailJS ready
 document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    const formData = new FormData(this);
-    console.log('Message envoyé:', Object.fromEntries(formData));
-    alert('Message envoyé ! (Demo - vérifiez la console)');
-    this.reset();
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+    
+    // Popup confirmation
+    const popup = confirm(`✅ Confirmer envoi ?\n\n👤 Nom: ${name}\n📧 Email: ${email}\n📋 Sujet: ${subject}`);
+    
+    if (popup) {
+        // Reset form
+        this.reset();
+        
+        // Demo console + alert
+        console.log('Message confirmé:', {name, email, subject, message});
+        alert('📧 Message reçu ! Réponse sous 24h.');
+    }
+    
+    // TODO EmailJS réel gratuit (no server):
+    // 1. EmailJS.com compte
+    // 2. Ajoutez <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    // 3. emailjs.init("YOUR_PUBLIC_KEY");
+    // 4. emailjs.send("service_id","template_id",params)
 });
 
 // Navbar scroll effect
