@@ -57,6 +57,10 @@ function showConfirmModal(name, email, subject, message, form) {
                     <span class="summary-label">📋 Sujet</span>
                     <span class="summary-value">${escapeHtml(subject || 'Non spécifié')}</span>
                 </div>
+                <div class="summary-row">
+                    <span class="summary-label">💬 Message</span>
+                    <span class="summary-value">${escapeHtml(message)}</span>
+                </div>
             </div>
             <div class="modal__buttons">
                 <button class="modal__btn modal__btn--confirm" onclick="confirmAndSend('${btoa(JSON.stringify({name, email, subject, message, formId: form.id}))}')">Envoyer</button>
