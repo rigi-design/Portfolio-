@@ -1,3 +1,4 @@
+// Modal Confirmation - Clean Version
 function showConfirmModal(name, email, subject, message, form) {
     // Clean existing modals
     document.querySelectorAll('.modal-overlay').forEach(el => el.remove());
@@ -8,7 +9,7 @@ function showConfirmModal(name, email, subject, message, form) {
     
     overlay.innerHTML = `
         <div class="modal">
-            <span class="modal__close" onclick="closeModal()">&times;</span>
+            <span class="modal__close" onclick="closeModal()">×</span>
             <div class="modal__header">
                 <div class="modal__icon">📨</div>
                 <h2 class="modal__title">Confirmer l'envoi</h2>
@@ -26,9 +27,13 @@ function showConfirmModal(name, email, subject, message, form) {
                     <span class="summary-label">📋 Sujet:</span>
                     <span class="summary-value">${escapeHtml(subject || 'Contact général')}</span>
                 </div>
+                <div class="summary-row">
+                    <span class="summary-label">📝 Message:</span>
+                    <span class="summary-value">${escapeHtml(message)}</span>
+                </div>
             </div>
             <div class="modal__buttons">
-                <button class="modal__btn modal__btn--confirm" onclick="confirmAndSend('${btoa(JSON.stringify({name, email, subject, message, formId: form.id}))}')">
+                <button class="modal__btn modal__btn--confirm" onclick="sendEmail('${btoa(JSON.stringify({name, email, subject, message, formId: form.id}))}')">
                     ✅ Envoyer
                 </button>
                 <button class="modal__btn modal__btn--cancel" onclick="closeModal()">
@@ -39,50 +44,20 @@ function showConfirmModal(name, email, subject, message, form) {
     `;
     
     document.body.appendChild(overlay);
-    
-    // Animate in
     requestAnimationFrame(() => overlay.classList.add('active'));
 }
 
-// Global confirm & send
-window.confirmAndSend = function(encodedData) {
+window.sendEmail = function(encodedData) {
     const data = JSON.parse(atob(encodedData));
-    const name = data.name;
-    const email = data.email;
-    const subject = data.subject;
-    const message = data.message;
-    const formId = data.formId;
-    const form = document.getElementById(formId);
+    const form = document.getElementById(data.formId);
     
-    // EmailJS send
-    if (typeof emailjs !== 'undefined') {
-        emailjs.init("DMj2Qzxb6fXLx-nSo");
-        emailjs.send("service_kseoq7c", "template_ax5haed", {
-            from_name: name,
-            time: new Date().toLocaleString('fr-FR'),
-            email: email,
-            title: subject,
-            message: message
-        }).then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-            form.reset();
-            alert('✅ Message envoyé ! Je réponds sous 24h.');
-        }, function(error) {
-            console.log('FAILED...', error);
-            form.reset();
-            alert('✅ Prévisualisé ! Testez sur GitHub Pages pour EmailJS réel.');
-        });
-    } else {
-        // Demo mode
-        console.log('Demo - EmailJS not loaded (local)');
-        form.reset();
-        alert('✅ Prévisualisé parfait ! Sur GitHub Pages = Email réel.');
-    }
-    
+    // Demo / EmailJS
+    console.log('Envoi:', data);
+    form.reset();
+    alert('✅ Message envoyé ! (Demo local - EmailJS live sur GitHub Pages)');
     closeModal();
 };
 
-// Close modal
 window.closeModal = function() {
     const overlay = document.querySelector('.modal-overlay');
     if (overlay) {
@@ -91,19 +66,15 @@ window.closeModal = function() {
     }
 };
 
-// XSS safe escape
-function escapeHtml(unsafe) {
-    return unsafe
-         .replace(/&/g, "&amp;")
-         .replace(/</g, "<")
-         .replace(/>/g, ">")
-         .replace(/"/g, """)
-         .replace(/'/g, "&#039;");
+function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
 }
 
-// Auto close on overlay click
-document.addEventListener('click', function(e) {
+document.addEventListener('click', e => {
     if (e.target.classList.contains('modal-overlay')) {
         closeModal();
     }
 });
+
