@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject') ? document.getElementById('subject').value : 'Contact';
+            const subject = document.getElementById('subject')?.value || 'Contact';
             const message = document.getElementById('message').value;
             
             if (!name || !email || !message) {
@@ -48,34 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // POPUP CONFIRM - ALWAYS WORKS
-            const popup = confirm(`✅ Confirmer envoi ?\n\n👤 ${name}\n📧 ${email}\n📋 ${subject}`);
-            
-            if (popup) {
-                // EmailJS IF AVAILABLE (GH Pages OK, local maybe not)
-                if (typeof emailjs !== 'undefined') {
-                    emailjs.init("DMj2Qzxb6fXLx-nSo");
-                    
-                    emailjs.send("service_kseoq7c", "template_ax5haed", {
-                        name: name,
-                        time: new Date().toLocaleString(),
-                        email: email,
-                        title: subject,
-                        message: message
-                    }).then((response) => {
-                        console.log('✅ SUCCESS!', response);
-                        this.reset();
-                        alert('📧 ENVOYÉ ! Boite mail.');
-                    }).catch((error) => {
-                        console.log('❌ EMAILJS ERROR:', error);
-                        alert('✅ Popup OK ! EmailJS local fail (CORS) - test GH Pages.');
-                    });
-                } else {
-                    console.log('EmailJS not loaded - demo mode');
-                    this.reset();
-                    alert('✅ Popup OK ! Test GH Pages pour EmailJS réel.');
-                }
-            }
+            // PRO Modal Popup
+            showConfirmModal(name, email, subject, message, this);
         });
     } else {
         console.log('No contact form found on this page');
