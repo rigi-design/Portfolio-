@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         name: name,
                         time: new Date().toLocaleString(),
                         email: email,
+                        title: subject,
                         message: message
                     }).then((response) => {
                         console.log('✅ SUCCESS!', response);
