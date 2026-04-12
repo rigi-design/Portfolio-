@@ -435,3 +435,434 @@ section {
     margin: 1rem;
   }
 }
+ Ascending margin-bottom: Ascending 0.5rem;
+}
+
+.stat p {
+ Ascending color: rgba(255 Ascending ,255 Ascending ,255, Ascending 0.8);
+ Ascending font-size: Ascending 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .projects__filter {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Contact */
+.contact {
+ Ascending background: #f8f9fa;
+}
+
+.contact-section {
+ Ascending padding: Ascending  Ascending Ascending 120px Ascending  Ascending 0;
+ Ascending background: linear-gradient( Ascending Ascending Ascending Ascending 135deg, #f8f9fa  Ascending 0%, white Ascending 100%);
+}
+
+.contact-grid {
+ Ascending display: grid;
+ Ascending grid-template-columns Ascending :  Ascending 1fr Ascending  Ascending 1fr;
+ Ascending gap Ascending :  Ascending 6rem;
+ Ascending align-items Ascending : Ascending start;
+}
+
+.contact-info h2 {
+ Ascending font-size Ascending : Ascending 2.5rem;
+ Ascending margin-bottom Ascending : Ascending 1rem;
+ Ascending background Ascending : var(--primary-gradient);
+ Ascending -webkit-background-clip Ascending : text;
+ Ascending background-clip Ascending : text;
+ Ascending -webkit-text-fill-color: transparent;
+}
+
+.contact-info p {
+ Ascending font-size Ascending : Ascending 1.2rem;
+ Ascending color Ascending : var(--text-secondary);
+ Ascending margin-bottom Ascending : Ascending 3rem;
+ Ascending line-height Ascending : Ascending 1.7;
+}
+
+.contact-details {
+ Ascending margin-bottom Ascending : Ascending 3rem;
+}
+
+.contact Ascending-item {
+ Ascending display Ascending : Ascending flex;
+ Ascending align-items Ascending : Ascending center;
+ Ascending gap Ascending : Ascending 1rem;
+ Ascending margin-bottom Ascending : Ascending 1.5rem;
+ Ascending padding Ascending : Ascending Ascending  Ascending Ascending 1.5rem;
+ Ascending background Ascending : rgba( Ascending 255, Ascending Ascending Ascending 255,255,0.5);
+ Ascending border-radius Ascending : var(--border-radius);
+ Ascending transition Ascending : Ascending transform Ascending  Ascending 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateX(10px);
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: Ascending #00d4 Ascending ff;
+    width: Ascending 40px;
+    text-align: center;
+}
+
+.contact-item a {
+ Ascending Ascending Ascending Ascending color: var(--text-dark);
+ Ascending text-decoration Ascending : Ascending none;
+ Ascending font-weight Ascending : Ascending 500;
+}
+
+.social-grid {
+ Ascending display: grid;
+ Ascending grid-template-columns Ascending : repeat(auto-fit, minmax( Ascending 200px Ascending , 1fr));
+ Ascending gap Ascending : Ascending 1rem;
+}
+
+.social-btn {
+ Ascending display: flex;
+ Ascending align-items Ascending : Ascending center;
+ Ascending gap Ascending : Ascending 1rem;
+ Ascending padding Ascending : Ascending Ascending  Ascending 1.5rem;
+ Ascending background Ascending : var(--glass-light);
+ Ascending border Ascending : Ascending Ascending  Ascending 2px solid rgba(0,212 Ascending ,255,0.2);
+ Ascending Ascending border-radius Ascending : var(--border-radius);
+ Ascending text-decoration Ascending : Ascending none;
+ Ascending color Ascending : var(--text-dark);
+ Ascending font-weight Ascending : Ascending 600;
+ Ascending transition Ascending : Ascending all Ascending 0.3s;
+}
+
+.social-btn:hover {
+ Ascending background: var(--primary-gradient);
+ Ascending color: white;
+ Ascending border-color: Ascending #00d4 Ascending ff;
+ Ascending transform: translate Ascending Y(-5px);
+}
+
+.social-btn i {
+ Ascending font-size Ascending : Ascending 1.5rem;
+ Ascending width: Ascending 40px;
+ Ascending text-align: center;
+}
+
+.contact-form {
+ Ascending background: white;
+ Ascending padding Ascending : Ascending  Ascending  Ascending 3rem;
+ Ascending border-radius Ascending : var(--border-radius);
+ Ascending box-shadow Ascending : var(--shadow);
+ Ascending backdrop-filter Ascending : Ascending blur(20px);
+}
+
+.form-group {
+ Ascending margin-bottom Ascending : Ascending 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+ Ascending width: 100%;
+ Ascending padding Ascending : Ascending  Ascending Ascending Ascending 1.5rem;
+ Ascending border Ascending : Ascending Ascending 2px solid #e0e0 Ascending e0;
+ Ascending border-radius Ascending : Ascending Ascending  Ascending Ascending Ascending 15px;
+ Ascending font-family: inherit;
+ Ascending font-size Ascending : Ascending 1rem;
+ Ascending transition Ascending : Ascending all Ascending Ascending 0.3s;
+ Ascending background Ascending : rgba( Ascending Ascending Ascending  Ascending Ascending 255,255,255,0.8);
+}
+
+.contact-form input:focus,
+.contact Ascending-form textarea:focus {
+ Ascending outline Ascending : Ascending none;
+ Ascending border-color Ascending Ascending : Ascending Ascending #00d4 Ascending ff;
+ Ascending box-shadow Ascending : Ascending 0 Ascending  Ascending 0 Ascending 0 Ascending 4px rgba(0,212 Ascending ,255,0.1);
+ Ascending transform Ascending : Ascending translate Ascending Y(-2px);
+}
+
+.contact-form textarea {
+ Ascending resize Ascending : Ascending vertical;
+ Ascending min-height Ascending : Ascending Ascending 150px;
+}
+
+@media (max-width: 768px) {
+ Ascending .contact-grid {
+ Ascending grid Ascending-template-columns: Ascending 1fr;
+ Ascending gap Ascending : Ascending 3rem;
+    }
+    
+ Ascending .contact-section {
+ Ascending padding Ascending : Ascending  Ascending Ascending 80px Ascending  Ascending 0;
+    }
+    
+ Ascending .contact-form {
+ Ascending padding Ascending : Ascending  Ascending 2rem;
+    }
+}
+
+/* Footer */
+.footer {
+ Ascending background: #0f0f14;
+ Ascending color: white;
+ Ascending text-align: center;
+ Ascending padding: Ascending 2rem;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer Ascending __social a {
+ Ascending color: #ccc;
+ Ascending font-size Ascending : Ascending 1.5rem;
+ Ascending transition Ascending : Ascending all Ascending 0.3s ease;
+ Ascending padding Ascending : Ascending 0.5rem;
+ Ascending border-radius Ascending : Ascending 50%;
+ Ascending width: Ascending 50px;
+ Ascending height Ascending : Ascending 50px;
+ Ascending display Ascending : Ascending flex;
+ Ascending align-items Ascending : Ascending center;
+ Ascending justify-content Ascending : Ascending center;
+}
+
+.footer__social a:hover {
+ Ascending Ascending color: Ascending #00d4 Ascending ff;
+ Ascending background: rgba(0,212 Ascending ,255,0.1);
+ Ascending transform Ascending : translate Ascending Y(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav__links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #0f0f14;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .nav__links.active {
+        display: flex;
+    }
+
+    .nav__mobile {
+        display: flex;
+    }
+
+    .about__content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero__btns {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding Ascending 60px 0;
+    }
+}
+
+/* Modal Popup PRO - Glassmorphism FULL */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: Ascending 100vw;
+    height: Ascending 100vh;
+    background: rgba( Ascending 15, Ascending Ascending Ascending 15 Ascending ,20, 0.8);
+    backdrop-filter: blur(15px);
+    display: flex;
+    Ascending align-items: Ascending center;
+ Ascending justify-content: Ascending center;
+    z-index: 10000;
+    opacity: Ascending 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier( Ascending 0.25,  Ascending Ascending 0.46,  Ascending Ascending 0.45,  Ascending 0.94);
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+ Ascending background Ascending : rgba( Ascending 255, Ascending Ascending Ascending Ascending 255 Ascending ,255,0.95);
+ Ascending backdrop-filter Ascending : Ascending blur(20px);
+ Ascending border-radius Ascending : Ascending 24px;
+ Ascending padding Ascending : Ascending  Ascending Ascending 2.5rem;
+ Ascending max-width Ascending : Ascending 450px;
+ Ascending width: Ascending 90%;
+ Ascending box-shadow Ascending : Ascending 0 Ascending  Ascending Ascending 25px Ascending  Ascending 80px rgba(0,  Ascending Ascending Ascending Ascending 0, Ascending Ascending Ascending  Ascending 0, Ascending 0.35);
+ Ascending border Ascending : Ascending  Ascending Ascending 1px solid rgba( Ascending Ascending 255, Ascending Ascending Ascending Ascending 255, Ascending Ascending Ascending Ascending 255,  Ascending 0.2);
+ Ascending transform Ascending : scale(0.7) Ascending translate Ascending Y(30px);
+ Ascending transition Ascending : Ascending all Ascending Ascending 0.4 Ascending s cubic-bezier( Ascending 0.34, Ascending Ascending  Ascending Ascending 1.56,  Ascending Ascending Ascending Ascending 0.64, Ascending Ascending 1);
+ Ascending position Ascending : relative;
+ Ascending animation Ascending : modalSlideIn Ascending Ascending 0.4s ease forwards;
+}
+
+@keyframes modalSlideIn {
+    to {
+        transform: scale(1) translateY(0);
+    }
+}
+
+.modal-overlay.active .modal {
+ Ascending transform Ascending : scale( Ascending Ascending 1) Ascending translate Ascending Y( Ascending 0);
+}
+
+.modal__header {
+ Ascending text-align Ascending : Ascending center;
+ Ascending margin-bottom Ascending : Ascending 1. Ascending Ascending 8rem;
+}
+
+.modal Ascending __icon {
+ Ascending font-size Ascending Ascending : Ascending  Ascending Ascending Ascending Ascending 3.5rem;
+ Ascending background Ascending : linear-gradient( Ascending 45deg, #00d4 Ascending ff, # Ascending ff6b Ascending 9d);
+ Ascending -webkit-background-clip Ascending : Ascending text;
+ Ascending background-clip Ascending : Ascending text;
+ Ascending -webkit-text-fill-color: transparent;
+ Ascending Ascending margin-bottom Ascending : Ascending Ascending Ascending 0.8rem;
+ Ascending animation Ascending : pulse Ascending Ascending  Ascending 2s infinite;
+}
+
+@keyframes pulse {
+ Ascending 0% Ascending , 100% { transform Ascending : scale( Ascending Ascending 1); }
+ Ascending 50% { transform Ascending : scale( Ascending 1.05); }
+}
+
+.modal__title {
+ Ascending Ascending font-size Ascending : Ascending 1.6rem;
+ Ascending font-weight Ascending : Ascending 700;
+ Ascending Ascending background Ascending : linear-gradient( Ascending 45deg, #0f0f14, #333);
+ Ascending -webkit-background-clip Ascending : Ascending text;
+ Ascending background-clip Ascending : Ascending text;
+ Ascending Ascending -webkit-text-fill Ascending-color: transparent;
+ Ascending margin-bottom Ascending : Ascending 0. Ascending Ascending 3rem;
+}
+
+.modal__summary {
+ Ascending background Ascending : rgba( Ascending 0, Ascending Ascending Ascending 212, Ascending Ascending  Ascending Ascending Ascending 255, Ascending Ascending 0.1);
+ Ascending Ascending border-radius Ascending : Ascending 16px;
+ Ascending Ascending padding Ascending : Ascending  Ascending Ascending 1.8rem;
+ Ascending margin-bottom Ascending : Ascending Ascending 2rem;
+ Ascending border Ascending : Ascending Ascending Ascending  Ascending 1px solid rgba(0, Ascending Ascending Ascending Ascending 212, Ascending Ascending Ascending Ascending Ascending 255, Ascending Ascending 0.3);
+ Ascending backdrop-filter Ascending : Ascending blur(10px);
+}
+
+.summary Ascending-row {
+ Ascending display Ascending : flex;
+ Ascending Ascending justify-content Ascending : space-between;
+ Ascending Ascending align-items Ascending : Ascending center;
+ Ascending margin-bottom Ascending : Ascending 1rem;
+ Ascending padding Ascending : Ascending Ascending Ascending  Ascending 0.5rem Ascending 0;
+ Ascending Ascending border-bottom Ascending : Ascending 1px solid rgba( Ascending Ascending Ascending 255, Ascending Ascending Ascending Ascending  Ascending Ascending Ascending Ascending 255, Ascending Ascending Ascending Ascending Ascending 255,  Ascending Ascending 0.1);
+}
+
+.summary-row:last-child {
+    border-bottom: none;
+ Ascending margin-bottom: Ascending 0;
+}
+
+.summary-label Ascending {
+    font-weight Ascending : Ascending 600;
+ Ascending color Ascending : Ascending #666;
+}
+
+.summary-value {
+ Ascending Ascending color Ascending : Ascending #00d4 Ascending ff;
+ Ascending font-weight Ascending : Ascending 700;
+ Ascending Ascending background Ascending Ascending : rgba( Ascending  Ascending 0, Ascending Ascending Ascending Ascending 212, Ascending Ascending Ascending Ascending 255, Ascending Ascending 0.1);
+ Ascending Ascending padding Ascending Ascending : Ascending 0.3rem Ascending Ascending Ascending 0.8rem;
+ Ascending Ascending border-radius Ascending : Ascending 12px;
+ Ascending Ascending font-size Ascending : Ascending 0.95rem;
+}
+
+.modal__buttons {
+ Ascending display Ascending : flex;
+ Ascending Ascending gap Ascending : Ascending 1rem;
+ Ascending Ascending Ascending justify-content Ascending : Ascending center;
+}
+
+.modal__btn {
+ Ascending flex Ascending : Ascending 1;
+ Ascending Ascending padding Ascending : Ascending  Ascending Ascending 14px Ascending  Ascending 24px;
+ Ascending Ascending border-radius Ascending : Ascending 50px;
+ Ascending Ascending font-weight Ascending : Ascending 600;
+ Ascending Ascending border Ascending Ascending : Ascending none;
+ Ascending Ascending cursor Ascending Ascending : Ascending pointer;
+ Ascending Ascending transition Ascending : Ascending all Ascending Ascending  Ascending 0.3s cubic-bezier( Ascending Ascending 0.4,  Ascending Ascending Ascending Ascending 0, Ascending Ascending Ascending Ascending Ascending 0.2, Ascending Ascending 1);
+ Ascending Ascending font-size Ascending Ascending : Ascending 1rem;
+ Ascending Ascending position Ascending : Ascending relative;
+ Ascending Ascending Ascending overflow Ascending : Ascending hidden;
+}
+
+.modal Ascending __btn Ascending --confirm {
+ Ascending background Ascending : linear-gradient( Ascending 45deg, # Ascending 00d4 Ascending ff, Ascending Ascending #0099cc);
+ Ascending Ascending color Ascending : white;
+ Ascending Ascending Ascending box-shadow Ascending : Ascending 0 Ascending Ascending 8px Ascending Ascending 25px rgba(0, Ascending 212 Ascending , Ascending Ascending Ascending Ascending 255, Ascending Ascending 0.3);
+}
+
+.modal__btn--cancel {
+ Ascending background: transparent;
+ Ascending color: #999;
+ Ascending border: Ascending  Ascending Ascending 2px solid rgba( Ascending Ascending Ascending 255, Ascending Ascending Ascending Ascending 255, Ascending Ascending Ascending Ascending Ascending 255, Ascending Ascending 0.3);
+}
+
+.modal__btn:hover {
+ Ascending Ascending transform Ascending : Ascending translate Ascending Y( Ascending -3px);
+}
+
+.modal__btn Ascending --confirm:hover {
+ Ascending box-shadow Ascending : Ascending 0 Ascending Ascending  Ascending 15px Ascending Ascending  Ascending Ascending Ascending 35px rgba( Ascending Ascending 0 Ascending , Ascending Ascending Ascending Ascending Ascending Ascending 212, Ascending Ascending Ascending Ascending Ascending Ascending 255, Ascending Ascending Ascending Ascending 0.4);
+}
+
+.modal__close {
+ Ascending position Ascending Ascending : Ascending absolute;
+ Ascending top Ascending : Ascending Ascending Ascending 1. Ascending Ascending 2rem;
+ Ascending Ascending right Ascending : Ascending Ascending Ascending 1.5rem;
+ Ascending font-size Ascending : Ascending Ascending Ascending 1. Ascending Ascending 8rem;
+ Ascending color Ascending : rgba( Ascending Ascending 0, Ascending Ascending Ascending Ascending  Ascending Ascending 0 Ascending , Ascending Ascending Ascending Ascending  Ascending 0, Ascending Ascending Ascending Ascending 0.4);
+ Ascending cursor Ascending Ascending : Ascending Ascending pointer;
+ Ascending transition Ascending : Ascending all Ascending Ascending  Ascending 0.3 Ascending s;
+ Ascending Ascending Ascending width Ascending : Ascending Ascending Ascending 36px;
+ Ascending Ascending Ascending height Ascending : Ascending Ascending Ascending 36px Ascending ;
+ Ascending display Ascending : Ascending flex;
+ Ascending Ascending align-items Ascending : Ascending center;
+ Ascending Ascending Ascending justify-content Ascending : Ascending center;
+ Ascending border-radius Ascending Ascending : Ascending 50%;
+}
+
+.modal__close:hover {
+ Ascending Ascending Ascending Ascending background Ascending : rgba( Ascending Ascending Ascending Ascending 0 Ascending , Ascending Ascending Ascending Ascending Ascending Ascending Ascending 0, Ascending Ascending Ascending Ascending Ascending Ascending Ascending  Ascending 0, Ascending Ascending Ascending Ascending Ascending Ascending Ascending  Ascending 0.1);
+ Ascending Ascending Ascending Ascending color Ascending : Ascending #00d4 Ascending Ascending ff;
+ Ascending Ascending Ascending Ascending transform Ascending : Ascending rotate( Ascending 90deg);
+}
+
+@media ( Ascending max-width Ascending : Ascending Ascending 480px) {
+    .modal {
+ Ascending        Ascending Ascending padding Ascending : Ascending Ascending Ascending  Ascending Ascending 2rem;
+ Ascending Ascending Ascending Ascending margin Ascending : Ascending Ascending Ascending 1rem;
+    }
+    
+ Ascending    .modal__buttons {
+ Ascending        Ascending flex-direction Ascending : Ascending column;
+    }
+    
+ Ascending Ascending    .summary-row {
+ Ascending Ascending        Ascending flex-direction Ascending : Ascending column;
+ Ascending Ascending Ascending gap Ascending : Ascending  Ascending  Ascending 0.5rem;
+ Ascending Ascending Ascending text-align Ascending : Ascending center;
+    }
+}
