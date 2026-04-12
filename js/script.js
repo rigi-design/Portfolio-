@@ -57,9 +57,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     emailjs.init("DMj2Qzxb6fXLx-nSo");
                     
                     emailjs.send("service_kseoq7c", "template_ax5haed", {
-                        from_name: name,
-                        from_email: email,
-                        subject: subject,
+                        name: name,
+                        title: subject,
+                        email: email,
                         message: message
                     }).then((response) => {
                         console.log('✅ SUCCESS!', response);
