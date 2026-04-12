@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     
                     emailjs.send("service_kseoq7c", "template_ax5haed", {
                         name: name,
-                        title: subject,
+                        time: new Date().toLocaleString(),
                         email: email,
                         message: message
                     }).then((response) => {
