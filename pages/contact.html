@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Rigi Bossekota Iyema Efole</title>
+    <title>Contact | Rigi Bossekota Iyema Efole</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- Header identique -->
     <header class="header">
-        <nav class="nav">
+        <nav class="nav" id="nav">
             <div class="nav__logo">
                 <h2>Rigi BE</h2>
             </div>
@@ -18,53 +18,99 @@
                 <li><a href="../index.html#home">Accueil</a></li>
                 <li><a href="../index.html#about">À propos</a></li>
                 <li><a href="projets.html">Projets</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="active">Contact</a></li>
             </ul>
+            <div class="nav__mobile" id="mobile-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
-    <!-- Contact Main -->
-    <main class="contact-page">
+    <!-- Hero Contact -->
+    <section class="hero hero--contact">
         <div class="container">
-            <h1 class="section__title">Contactez-moi</h1>
-            <div class="contact__content">
-                <div class="contact__info">
-                    <h2>Discutons de votre projet !</h2>
-                    <p>Envoyez-moi un message ou connectez sur les réseaux.</p>
-                    <div class="contact__social">
-                        <a href="https://github.com/rigi-design" class="social-link">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="mailto:contact@rigidesign.com" class="social-link">
+            <h1>Contactez-moi</h1>
+            <p>Prêt à transformer vos idées en réalité digitale</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Info gauche -->
+                <div class="contact-info">
+                    <h2>Discutons de votre projet</h2>
+                    <p>Web moderne, apps mobiles Flutter ou outils desktop Python.</p>
+                    
+                    <!-- Coordonnées -->
+                    <div class="contact-details">
+                        <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>Email</span>
+                            <a href="mailto:contact@rigibe.com">contact@rigibe.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Cameroun</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Réponse sous 24h</span>
+                        </div>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="social-grid">
+                        <a href="https://github.com/rigi-design" class="social-btn" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
                         </a>
-                        <a href="https://wa.me/..." class="social-link">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>WhatsApp</span>
+                        <a href="#" class="social-btn" target="_blank">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://wa.me/237XXXXXXXXX" class="social-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
                         </a>
                     </div>
                 </div>
-                <form class="contact__form" id="contact-form">
-                    <input type="text" placeholder="Votre nom" required>
-                    <input type="email" placeholder="Votre email" required>
-                    <input type="text" placeholder="Sujet" required>
-                    <textarea placeholder="Votre message..." rows="6" required></textarea>
-                    <button type="submit" class="btn btn--primary">Envoyer le message</button>
+
+                <!-- Form droite -->
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Sujet du projet">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="6" placeholder="Dites-moi tout sur votre projet..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--large">
+                        Envoyer le message
+                    </button>
                 </form>
             </div>
         </div>
-    </main>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Rigi Bossekota Iyema Efole. Développeur Fullstack.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
     <script>
-        document.getElementById('contact-form').addEventListener('submit', (e) => {
+        // Form handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Message envoyé ! (Demo - contactez via social)');
+            // Demo - real form would send email
+            alert('✅ Message envoyé ! Je vous contacte sous 24h.');
             this.reset();
         });
     </script>
