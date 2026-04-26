@@ -47,48 +47,77 @@
                 <a href="pages/projets.html" class="btn btn--primary">Mes Projets</a>
                 <a href="#contact" class="btn btn--secondary">Me Contacter</a>
             </div>
+        </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section__title">À propos</h2>
-<div class="about__content">
-                <div class="about__text">
-                    <p>Passionné par le développement logiciel, je crée des applications web modernes, des apps mobiles fluides et des logiciels desktop performants.</p>
-                    <p>Compétences principales :</p>
+<section id="about" class="about">
+    <div class="container">
+
+        <h2 class="section__title">À propos</h2>
+
+        <div class="about__content">
+
+            <!-- Texte -->
+            <div class="about__text">
+                <p>
+                    Passionné par le développement logiciel, je crée des applications web modernes,
+                    des apps mobiles fluides et des logiciels desktop performants.
+                </p>
+                <p>Compétences principales :</p>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="skills__grid">
+
+                <!-- Skill 1 -->
+                <div class="skill" data-aos="fade-up">
+                    <i class="fas fa-code skill__icon"></i>
+                    <h3>Web Development</h3>
+
+                    <div class="progress__container">
+                        <div class="progress__bar">
+                            <div class="progress__fill" data-progress="100"></div>
+                        </div>
+                    </div>
+
+                    <small>HTML, CSS, JS, PHP</small>
                 </div>
-<div class="skills__grid">
-    <div class="skill" data-aos="fade-up">
-        <i class="fas fa-code skill__icon"></i>
-        <h3>Web Development</h3>
-        <div class="progress__container">
-            <div class="progress__bar">
-<div class="progress__fill" data-progress="100"></div>
-        </div>
-        <small>HTML, CSS, JS, PHP</small>
-    </div>
-    <div class="skill" data-aos="fade-up" data-aos-delay="100">
-        <i class="fab fa-flutter skill__icon"></i>
-        <h3>Mobile</h3>
-        <div class="progress__container">
-            <div class="progress__bar">
-<div class="progress__fill" data-progress="100"></div>
-        </div>
-        <small>Flutter</small>
-    </div>
-    <div class="skill" data-aos="fade-up" data-aos-delay="200">
-        <i class="fab fa-python skill__icon"></i>
-        <h3>Desktop</h3>
-        <div class="progress__container">
-            <div class="progress__bar">
-<div class="progress__fill" data-progress="100"></div>
-        </div>
-        <small>Python</small>
-    </div>
-</div>
-        </div>
-    </section>
+
+                <!-- Skill 2 -->
+                <div class="skill" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fab fa-flutter skill__icon"></i>
+                    <h3>Mobile</h3>
+
+                    <div class="progress__container">
+                        <div class="progress__bar">
+                            <div class="progress__fill" data-progress="100"></div>
+                        </div>
+                    </div>
+
+                    <small>Flutter</small>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fab fa-python skill__icon"></i>
+                    <h3>Desktop</h3>
+
+                    <div class="progress__container">
+                        <div class="progress__bar">
+                            <div class="progress__fill" data-progress="100"></div>
+                        </div>
+                    </div>
+
+                    <small>Python</small>
+                </div>
+
+            </div> <!-- END skills__grid -->
+
+        </div> <!-- END about__content -->
+
+    </div> <!-- END container -->
+</section>
 
     <!-- Projects Section -->
     <section id="projects-preview" class="projects-preview">
@@ -114,6 +143,7 @@
                             <a href="pages/projets.html#portfolio" class="btn btn--small">Voir Détails</a>
                             <a href="https://github.com/rigi-design/Portfolio-" target="_blank" class="btn btn--secondary btn--small">Voir Code</a>
                         </div>
+                    </div>
                 </div>
                 <div class="project__card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project__img">
@@ -131,6 +161,7 @@
                             <a href="pages/projets.html#flutter" class="btn btn--small">Voir Détails</a>
                             <a href="#" class="btn btn--secondary btn--small">APK Demo</a>
                         </div>
+                    </div>
                 </div>
                 <div class="project__card" data-aos="fade-up" data-aos-delay="200">
                     <div class="project__img">
@@ -148,10 +179,13 @@
                             <a href="pages/projets.html#gestecole" class="btn btn--small">Voir Détails</a>
                             <a href="https://github.com/rigi-design/Gestecole" target="_blank" class="btn btn--secondary btn--small">Voir Code</a>
                         </div>
+                    </div>
                 </div>
+            </div>
             <div class="section-footer">
                 <a href="pages/projets.html" class="btn btn--primary btn--large">Voir Tous les Projets</a>
             </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -192,3 +226,5 @@
         duration: 1200,
         once: true
     });</script>
+
+
