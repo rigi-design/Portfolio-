@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --primary-gradient: linear-gradient(45deg, #00d4ff, #0099cc);
   --secondary-gradient: linear-gradient(45deg, #ff6b9d, #ff8e8e);
   --bg-dark: #0f0f14;
@@ -378,7 +378,7 @@ section {
 
 .projects__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -390,6 +390,8 @@ section {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: 1px solid rgba(255,255,255,0.2);
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .project__card:hover {
@@ -400,6 +402,7 @@ section {
 .project__img {
     height: 250px;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .project__img img {
@@ -415,6 +418,9 @@ section {
 
 .project__content {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .project__content h3 {
@@ -450,7 +456,10 @@ section {
 .project__btns {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
 }
+
+
 
 .project__card {
     background: rgba(255,255,255,0.05);
@@ -925,3 +934,61 @@ section {
     }
 }
 
+
+/* Responsive - Section Projets Mobile */
+@media (max-width: 768px) {
+    .projects__grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .project__img {
+        height: 200px;
+    }
+    
+    .project__content {
+        padding: 1.5rem;
+    }
+    
+    .project__content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .project__btns {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .project__btns .btn {
+        width: 100%;
+        flex: none;
+    }
+    
+    .projects-preview {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects__grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .project__img {
+        height: 180px;
+    }
+    
+    .project__content {
+        padding: 1.2rem;
+    }
+    
+    .tech-tags {
+        gap: 0.3rem;
+    }
+    
+    .tech {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+    }
+}
