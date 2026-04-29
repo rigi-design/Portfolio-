@@ -37,6 +37,7 @@ body {
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
+    padding-top: 70px;
 }
 
 .container {
@@ -150,11 +151,17 @@ body {
 .hero__photo img {
     width: 100%;
     max-width: 350px;
-    height: 350px;
+    aspect-ratio: 1/1; /* ✅ garde un carré parfait */
+    height: auto;      /* ✅ enlève la hauteur fixe */
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-    border: 5px solid rgba(0,212,255,0.2);
+}
+
+@media (max-width: 768px) {
+    .hero__container {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+    }
 }
 
 .btn {

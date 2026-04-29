@@ -1,18 +1,28 @@
 // Mobile menu toggle
 const mobileBtn = document.getElementById('mobile-btn');
-const navLinks = document.getElementById('nav');
-const nav = document.querySelector('.nav__links');
+const navLinks = document.querySelector('.nav__links');
 
-mobileBtn.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    mobileBtn.classList.toggle('active');
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileBtn = document.getElementById('mobile-btn');
+    const navLinks = document.querySelector('.nav__links');
+    
+    if (mobileBtn && navLinks) {
+        mobileBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileBtn.classList.toggle('active');
+        });
+    }
 });
 
-// Close mobile menu on link click
-document.querySelectorAll('.nav__links a').forEach(link => {
-    link.addEventListener('click', () => {
-        nav.classList.remove('active');
-        mobileBtn.classList.remove('active');
+// Close mobile menu on link click - SAFE
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.nav__links a').forEach(link => {
+        link.addEventListener('click', () => {
+            const navLinks = document.querySelector('.nav__links');
+            const mobileBtn = document.getElementById('mobile-btn');
+            if (navLinks) navLinks.classList.remove('active');
+            if (mobileBtn) mobileBtn.classList.remove('active');
+        });
     });
 });
 
