@@ -381,8 +381,11 @@ section {
 }
 
 /* Projects */
-.projects {
-    background: #0f0f14;
+.projects,
+.projects-section,
+.filter-section,
+.cta-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
 }
 
