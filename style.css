@@ -381,17 +381,10 @@ section {
 }
 
 /* Projects */
-.projects,
-.projects-section,
-.filter-section,
-.cta-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-}
 
-.projects-preview {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 100px 0;
+
+.projects-page {
+    background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
 .section-footer {
