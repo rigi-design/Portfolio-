@@ -263,6 +263,10 @@ body {
     display: inline-block;
 }
 
+.projects-preview{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
 .stats__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
